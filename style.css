@@ -1,0 +1,26 @@
+/*
+Theme Name:     Socbootstrap
+Theme URI:
+Description:    Wp-bootstrap-starter child theme.
+Author:         Me
+Author URI:
+Template:       wp-bootstrap-starter
+Version:        0.1.0
+*/
+
+
+body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
+	font: 18px "Akkurat Pro Bold","Arial Black",sans-serif;
+	color: #4e2a84;
+	text-decoration: none;
+	display: block;
+	padding: 1rem .3rem;
+}
+
+body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover {
+	color: blue;
+}
+
+body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item  {
+	background-color: lightgray;
+}

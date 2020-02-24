@@ -8,8 +8,37 @@ Template:       wp-bootstrap-starter
 Version:        0.1.0
 */
 
+#purple_area {
+	background-color: #401f68;
+}
 
-body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
+#purple_area ul  {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#purple_area ul li {
+	display: inline-block;
+}
+
+#purple_area ul li a {
+	color:white;
+}
+
+header#masthead {
+	background-color: white;
+	color: black;
+}
+
+header#masthead a {
+	color: black;
+}
+
+
+
+body:not(.theme-preset-active) #masthead .navbar-nav > li > a,
+body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover  {
 	font: 18px "Akkurat Pro Bold","Arial Black",sans-serif;
 	color: #4e2a84;
 	text-decoration: none;
@@ -17,10 +46,29 @@ body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
 	padding: 1rem .3rem;
 }
 
-body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover {
-	color: blue;
+body:not(.theme-preset-active) #masthead .navbar-nav > li:hover {
+	background-color: lightgray;
 }
 
 body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item  {
 	background-color: lightgray;
+}
+
+
+#breadcrumbs{
+    list-style:none;
+    margin:10px 0;
+    overflow:hidden;
+}
+  
+#breadcrumbs li{
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:15px;
+}
+  
+#breadcrumbs .separator{
+    font-size:18px;
+    font-weight:100;
+    color:#ccc;
 }

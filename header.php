@@ -30,38 +30,41 @@
         <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'wp-bootstrap-starter'); ?></a>
         <?php if (!is_page_template('blank-page.php') && !is_page_template('blank-page-with-container.php')) : ?>
 
-            <style>
-                #purple_area {
-                    background-color: #401f68;
-                }
+  
 
-                header#masthead {
-                    background-color: white;
-                    color: black;
-                }
+            <header id="masthead" class="site-header navbar-static-top <?php echo wp_bootstrap_starter_bg_class(); ?> m-0 p-0" role="banner">
 
-                header#masthead a {
-                    color: black;
-                }
-            </style>
-
-		<header id="masthead" class="site-header navbar-static-top <?php echo wp_bootstrap_starter_bg_class(); ?> m-0 p-0" role="banner">
-
-            <div id="purple_area">
-                <div class="container">
-                    PURPLE AREA
-                </div>
-            </div>
+                <div id="purple_area">
+                    <div class="container">
 
 
-            <div id="menu_area">
-                <div class="container ">
-                    <div class="row">
-                        <div class="col-lg-9">LOGO</div>
-                        <div class="col-lg-3"><?php get_search_form() ?></div>
+                        <?php
+                        wp_nav_menu(array(
+                            'theme_location'    => 'purple-menu',
+                            'container'       => 'div',
+                            'container_id'    => '',
+                            'container_class' => 'flex-box d-flex',
+                            'menu_id'         => false,
+                            'menu_class'      => 'float-right',
+                            'depth'           => 3,
+
+                        ));
+                        ?>
+
                     </div>
                 </div>
-            </div>
+
+              
+
+
+                <div id="menu_area">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-lg-9">LOGO</div>
+                            <div class="col-lg-3"><?php get_search_form() ?></div>
+                        </div>
+                    </div>
+                </div>
 
 
                 <div class="container">
@@ -89,7 +92,10 @@
                 </div>
             </header><!-- #masthead -->
 
-
+                        
+            <div class="container">
+                <?php socbootstrap_breadcrumbs(); ?>
+            </div>
 
             <?php if (is_front_page() && !get_theme_mod('header_banner_visibility')) : ?>
                 <div id="page-sub-header" <?php if (has_header_image()) { ?>style="background-image: url('<?php header_image(); ?>');" <?php } ?>>

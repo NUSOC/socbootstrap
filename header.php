@@ -30,31 +30,32 @@
         <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'wp-bootstrap-starter'); ?></a>
         <?php if (!is_page_template('blank-page.php') && !is_page_template('blank-page-with-container.php')) : ?>
 
-  
+
 
             <header id="masthead" class="site-header navbar-static-top <?php echo wp_bootstrap_starter_bg_class(); ?> m-0 p-0" role="banner">
 
                 <div id="purple_area">
                     <div class="container">
+                        <div class="d-flex flexbox">
+                            <div class="text-right w-100">
+                                <?php
+                                wp_nav_menu(array(
+                                    'theme_location'    => 'purple-menu',
+                                    'container'       => 'div',
+                                    'container_id'    => '',
+                                    'container_class' => '',
+                                    'menu_id'         => false,
+                                    'menu_class'      => 'd-none d-xl-block',
+                                    'depth'           => 3,
 
-
-                        <?php
-                        wp_nav_menu(array(
-                            'theme_location'    => 'purple-menu',
-                            'container'       => 'div',
-                            'container_id'    => '',
-                            'container_class' => 'flex-box d-flex',
-                            'menu_id'         => false,
-                            'menu_class'      => 'float-right',
-                            'depth'           => 3,
-
-                        ));
-                        ?>
-
+                                ));
+                                ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-              
+
 
 
                 <div id="menu_area">
@@ -72,6 +73,7 @@
 
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
+                    
                         </button>
 
                         <?php
@@ -86,13 +88,14 @@
                             'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
                             'walker'          => new wp_bootstrap_navwalker()
                         ));
+
                         ?>
 
                     </nav>
                 </div>
             </header><!-- #masthead -->
 
-                        
+
             <div class="container">
                 <?php socbootstrap_breadcrumbs(); ?>
             </div>

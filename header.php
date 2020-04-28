@@ -61,7 +61,9 @@
                 <div id="menu_area">
                     <div class="container ">
                         <div class="row">
-                            <div class="col-lg-9">LOGO</div>
+                            <div class="col-lg-9">
+								<img class="lockup" src="<?php echo get_theme_mod('socbootstrap_logo') ?>" />
+							</div>
                             <div class="col-lg-3"><?php get_search_form() ?></div>
                         </div>
                     </div>

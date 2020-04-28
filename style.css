@@ -35,6 +35,10 @@ header#masthead a {
 	color: black;
 }
 
+header#masthead img.lockup {
+		/*border: 1px solid #ff0000;*/
+	max-width: 400px;
+}
 
 
 body:not(.theme-preset-active) #masthead .navbar-nav > li > a,
@@ -105,7 +109,6 @@ body #searchsubmit  {
 	background-repeat: no-repeat;
 	text-align: unset;
 }
-
 
 
 /* Accessible Hide */

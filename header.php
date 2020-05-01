@@ -39,7 +39,7 @@
 		<div id="purple_area">
 			<div class="container">
 				<div class="d-flex flexbox">
-					<div class="text-right w-100">
+					<div class="text-right w-100" aria-label="School of Navigation Menu ">
 						<?php
 						wp_nav_menu(array(
 							'theme_location' => 'purple-menu',
@@ -49,6 +49,7 @@
 							'menu_id' => false,
 							'menu_class' => 'd-none d-xl-block',
 							'depth' => 3,
+
 
 						));
 						?>
@@ -75,7 +76,7 @@
 
 
 		<div class="container">
-			<nav class="navbar navbar-expand-xl p-0">
+			<nav class="navbar navbar-expand-xl p-0" aria-label="primary navigation">
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
 						aria-controls="" aria-expanded="false" aria-label="Toggle navigation">

@@ -261,3 +261,9 @@ body #searchsubmit:focus {
 	height: 1px;
 	overflow: hidden;
 }
+
+/* so I can see the template plugin during development */
+#wpadminbar .show-template-name,
+#wpadminbar #included-files-list li{
+	color:white;
+}

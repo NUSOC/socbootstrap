@@ -112,7 +112,7 @@ function socbootstrap_breadcrumbs()
 	if (!is_front_page()) {
 
 		// Build the breadcrums
-		echo '<ul id="' . $breadcrums_id . '" class="' . $breadcrums_class . '">';
+		echo '<ul id="' . $breadcrums_id . '" class="' . $breadcrums_class . '" aria-label="breadcrumb" >';
 
 		// Home page
 		echo '<li class="item-home"><a class="bread-link bread-home" href="' . get_home_url() . '" title="' . $home_title . '">' . $home_title . '</a></li>';

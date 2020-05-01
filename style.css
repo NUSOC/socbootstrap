@@ -9,7 +9,6 @@ Version:        0.1.0
 */
 
 
-
 @font-face {
 	font-family: "Akkurat Pro Light";
 	src: url("https://media.soc.northwestern.edu/common/fonts/AkkuratProLight.woff") format("woff");
@@ -80,17 +79,23 @@ Version:        0.1.0
 	font-style: normal
 }
 
+/*
+Starting defaults
+*/
 body a {
 	color: #401f68;
 }
 
+body * {
+	font-family: "Akkurat Pro Regular", Arial, sans-serif;
+}
 
 
 #purple_area {
 	background-color: #401f68;
 }
 
-#purple_area ul  {
+#purple_area ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -101,7 +106,7 @@ body a {
 }
 
 #purple_area ul li a {
-	color:white;
+	color: white;
 }
 
 header#masthead {
@@ -117,10 +122,10 @@ header#masthead img.lockup {
 	max-width: 400px;
 }
 
-
+/* Menu first level*/
 body:not(.theme-preset-active) #masthead .navbar-nav > li > a,
-body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover  {
-	font: 18px "Akkurat Pro Bold","Arial Black",sans-serif;
+body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover {
+	font: 18px "Akkurat Pro Bold", "Arial Black", sans-serif;
 	color: #4e2a84;
 	text-decoration: none;
 	display: block;
@@ -131,7 +136,7 @@ body:not(.theme-preset-active) #masthead .navbar-nav > li:hover {
 	background-color: lightgray;
 }
 
-body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item  {
+body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item {
 	background-color: lightgray;
 
 }
@@ -141,42 +146,77 @@ body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item a {
 	font-weight: 600;
 }
 
-#breadcrumbs{
-    list-style:none;
-    margin:10px 0;
-    overflow:hidden;
-	font-family: "Akkurat Pro Bold","Arial Black",sans-serif;
+/* Menu sub levels */
+body:not(.theme-preset-active) #masthead .navbar-nav > li ul li a {
+	display: block;
+	color: rgb(85, 49, 113);
+	font-family: 'Akkurat Pro Regular', Arial, sans-serif !important;
+	margin: 0px;
+	padding: 10px;
 }
 
-#breadcrumbs li{
-    display:inline-block;
-    vertical-align:middle;
-    margin-right:15px;
+body:not(.theme-preset-active) #masthead .navbar-nav > li ul li:hover {
+	background-color: lightgrey;
+}
+
+#breadcrumbs {
+	list-style: none;
+	margin: 10px 0;
+	overflow: hidden;
+	font-family: "Akkurat Pro Bold", "Arial Black", sans-serif;
+}
+
+#breadcrumbs li {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
 }
 
 #breadcrumbs li a {
 	color: #401f68;
 }
 
-#breadcrumbs .separator{
-    font-size:18px;
-    font-weight:100;
-    color:#ccc;
+#breadcrumbs .separator {
+	font-size: 18px;
+	font-weight: 100;
+	color: #401f68;
 }
 
+
+/*
+Hero Banner
+Copied from NUedu
+*/
+#hero .title {
+	font: 60px/1.2em "Campton Bold", Impact, sans-serif;
+	color: #fff;
+	text-shadow: 2px 2px 0px #000;
+	margin-bottom: 1rem;
+	position: relative;
+	display: block;
+}
+
+#hero .subtitle {
+	font: 21px "Akkurat Pro Regular", Arial, sans-serif;
+	font-size: 21px;
+	color: #fff;
+	text-shadow: 1px 1px 0px #000;
+	position: relative;
+	margin: .5rem 0 1.5rem 0;
+}
 
 /* SeARCH FOrm */
 header#masthead #searchform input#search {
 
-    height: 35px;
-    padding: 0 .3em 0 0;
-    float: left;
-    font: 14px "Akkurat Pro Bold","Arial Black",sans-serif;
-    background: none;
-    color: black;
-    border: none;
-    border-bottom: 1px solid #b6acd1;
-    -webkit-appearance: none;
+	height: 35px;
+	padding: 0 .3em 0 0;
+	float: left;
+	font: 14px "Akkurat Pro Bold", "Arial Black", sans-serif;
+	background: none;
+	color: black;
+	border: none;
+	border-bottom: 1px solid #b6acd1;
+	-webkit-appearance: none;
 }
 
 header#masthead #searchform input#search:focus {
@@ -187,25 +227,25 @@ header#masthead #searchform input#search:focus {
 }
 
 body input#searchsubmit {
-		float: right;
-		cursor: pointer;
-		height: 35px;
-		width: 35px;
-		background-size: 20px 20px;
-		border: none;
-		/*border-bottom: 1px solid #b6acd1;*/
-		-webkit-appearance: none;
+	float: right;
+	cursor: pointer;
+	height: 35px;
+	width: 35px;
+	background-size: 20px 20px;
+	border: none;
+	/*border-bottom: 1px solid #b6acd1;*/
+	-webkit-appearance: none;
 
 }
 
 
-body #searchsubmit  {
+body #searchsubmit {
 	background-image: url(//media.soc.northwestern.edu/common/icons/search.svg);
 	background-repeat: no-repeat;
 	text-align: unset;
 }
 
-body #searchsubmit:focus  {
+body #searchsubmit:focus {
 	filter: blur(8px);
 	-webkit-filter: blur(8px);
 }
@@ -213,10 +253,10 @@ body #searchsubmit:focus  {
 
 /* Accessible Hide */
 .accessible_hide {
-	position:absolute;
-	left:-10000px;
-	top:auto;
-	width:1px;
-	height:1px;
-	overflow:hidden;
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
 }

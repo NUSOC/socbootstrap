@@ -47,7 +47,7 @@
 							'container_id' => '',
 							'container_class' => '',
 							'menu_id' => false,
-							'menu_class' => 'd-none d-xl-block',
+							'menu_class' => '',
 							'depth' => 3,
 
 

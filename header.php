@@ -76,7 +76,7 @@
 
 
 		<div class="container">
-			<nav class="navbar navbar-expand-xl p-0" aria-label="primary navigation">
+			<nav class="navbar navbar-expand-lg p-0" aria-label="primary navigation">
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
 						aria-controls="" aria-expanded="false" aria-label="Toggle navigation">

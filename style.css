@@ -103,6 +103,14 @@ body #main p {
 	font-size: 16px;
 }
 
+/* Heading */
+h1 {
+	font: 46px/1.2em "Campton Book",Tahoma,sans-serif;
+	color: #4e2a84;
+	margin-bottom: 1rem;
+	font-size: 30px;
+}
+
 
 #purple_area {
 	background-color: #401f68;

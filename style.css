@@ -94,16 +94,21 @@ body * {
 
 #purple_area {
 	background-color: #401f68;
+	height: 40px;
+	min-height: 40px;
 }
 
 #purple_area ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	margin-top: 10px;
 }
 
 #purple_area ul li {
 	display: inline-block;
+	margin-right: 1em;
+	font-size: 12px;
 }
 
 #purple_area ul li a {

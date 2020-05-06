@@ -39,7 +39,7 @@
 		<div id="purple_area">
 			<div class="container">
 				<div class="d-flex flexbox">
-					<div class="text-right w-100" aria-label="School of Navigation Menu ">
+					<div class="text-right w-100" aria-label="School of Navigation Menu " id="school_nav_menu">
 						<?php
 						wp_nav_menu(array(
 							'theme_location' => 'purple-menu',

@@ -91,6 +91,18 @@ body * {
 	color: black;
 }
 
+/* Default main text type */
+body #main p {
+
+	margin-bottom: 1rem;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	color: rgb(52, 47, 46);
+	display: block;
+	font-family: "Akkurat Pro Regular", Arial, sans-serif;
+	font-size: 16px;
+}
+
 
 #purple_area {
 	background-color: #401f68;
@@ -138,6 +150,7 @@ body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover {
 	padding: 1rem .3rem;
 }
 
+
 body:not(.theme-preset-active) #masthead .navbar-nav > li:hover {
 	background-color: lightgray;
 }
@@ -160,7 +173,9 @@ body:not(.theme-preset-active) #masthead .navbar-nav > li ul li a {
 	margin: 0px;
 	padding: 10px;
 }
-
+body:not(.theme-preset-active) #masthead .navbar-nav > li ul {
+	background-color: whitesmoke;
+}
 body:not(.theme-preset-active) #masthead .navbar-nav > li ul li:hover {
 	background-color: lightgrey;
 }

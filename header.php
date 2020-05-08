@@ -64,7 +64,7 @@
 				<div class="row">
 					<div class="col-lg-9">
 						<a href="<?php echo home_url() ?>">
-							<img class="lockup"
+							<img class="lockup mt-1 mb-1"
 								 src="<?php echo get_theme_mod('socbootstrap_logo') ?>"
 								 alt="<?php echo get_bloginfo('name') ?>"/>
 						</a>

@@ -104,9 +104,18 @@ body #main p {
 }
 
 /* Heading */
-h1 {
-	font: 46px/1.2em "Campton Book",Tahoma,sans-serif;
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+	font: "Campton Book",Tahoma,sans-serif;
 	color: #4e2a84;
+}
+
+h1 {
+	font: "Campton Book",Tahoma,sans-serif;
 	margin-bottom: 1rem;
 	font-size: 30px;
 }
